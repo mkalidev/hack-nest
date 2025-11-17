@@ -1,7 +1,8 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 export default function Container() {
   return (
-    <div>Container</div>
+    <div className='w-full mx'><Outlet /></div>
   )
 }
