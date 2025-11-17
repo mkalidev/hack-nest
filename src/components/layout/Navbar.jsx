@@ -38,22 +38,20 @@ export default function Navbar() {
         <div className="mx-auto px-4 md:px-6 flex items-center h-full justify-between max-w-[1320px]">
           <Link to="/">
             <p className="font-semibold text-[16px] md:text-[20px]">
-              Welcome,{" "}
-              <span className="text-c-color capitalize">Guest</span>
+              Welcome, <span className="text-c-color capitalize">Guest</span>
             </p>
           </Link>
           <div className="block md:hidden" onClick={() => setOpen(!open)}>
             <GiHamburgerMenu size={24} />
           </div>
 
-<div className="flex gap-3 items-center">
-  <Link to="/login">
-  <div className="px-4 py-2.5 rounded-full bg-c-color text-white text-sm font-semibold">Login</div>
-  </Link>
-  <Link to="/register">
-  <div className="px-4 py-2.5 rounded-full bg-c-color text-white text-sm font-semibold">Register</div>
-  </Link>
-</div>
+          <div className="flex gap-3 items-center">
+            <Link to="/login">
+              <div className="px-4 py-2.5 rounded-full bg-c-color text-white text-xs font-semibold">
+                Login
+              </div>
+            </Link>
+          </div>
 
           {/* <div
             className="hidden md:flex items-center gap-3 relative cursor-pointer"
