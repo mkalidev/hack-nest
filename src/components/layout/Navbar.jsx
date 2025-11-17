@@ -11,7 +11,7 @@ export default function Navbar() {
   const optionsRef = useRef(null);
 
   const { open: openAuth } = useAppKit();
-  const { address: _address, isConnected: _isConnected } = useAppKitAccount();
+  const { address, isConnected } = useAppKitAccount();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function Navbar() {
     };
   }, [showOption]);
 
-  const _handleKebabClick = (e) => {
+  const handleKebabClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
     setShowOption(!showOption);
@@ -60,13 +60,13 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold" onClick={() => openAuth()}>
+          <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold" onClick={openAuth}>
             Sign up
           </div>
 
           {/* <div
             className="hidden md:flex items-center gap-3 relative cursor-pointer"
-            onClick={_handleKebabClick}
+            onClick={handleKebabClick}
           >
             <div className="w-12 h-12 rounded-full bg-c-color overflow-hidden">
               <img src={''} alt="" />
