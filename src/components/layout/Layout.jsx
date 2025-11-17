@@ -9,7 +9,9 @@ export default function Layout() {
       {/* <Sidebar /> */}
       <div className="space-y-0 w-full relative">
         <Navbar />
-        <div className="w-full h-[30px] bg-purple-500"></div>
+        <div
+          className="w-full h-[200px] bg-gradient-to-r from-purple-700 to-black"
+        ></div>
         <div className="max-w-[1320px] py-5 px-4 md:px-6 mx-auto">
           <Outlet />
         </div>
