@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getCookie } from "../lib/utils";
+import { getCookie } from "../components/libs/utils";
 
 const apiURL = import.meta.env.VITE_API_URL;
 
