@@ -58,7 +58,7 @@ export default function Navbar() {
               <p className="text-sm font-semibold capitalize">
                 Guest
               </p>
-              <p className="text-xs text-gray-500 capitalize">{user?.role}</p>
+              <p className="text-xs text-gray-500 capitalize">User</p>
             </div>
             <CgChevronDown />
             {showOption && (
@@ -76,7 +76,6 @@ export default function Navbar() {
                 </Link>
                 <div
                   className="p-3 text-red-500 w-full hover:bg-black/10 cursor-pointer"
-                  onClick={logoutFn}
                 >
                   Logout
                 </div>
