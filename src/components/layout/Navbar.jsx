@@ -44,15 +44,15 @@ export default function Navbar() {
           <div className="block md:hidden" onClick={() => setOpen(!open)}>
             <GiHamburgerMenu size={24} />
           </div>
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-6 items-center">
             <Link to="/">
             <p className="text-sm font-medium text-black/60">Bounty</p>
             </Link>
             <Link to="/">
-            <p className="text-sm font-medium text-black/60">Hackerthon</p>
+            <p className="text-sm font-medium text-black/60">Hackathon</p>
             </Link>
             <Link to="/">
-            <p className="text-sm font-medium text-black/60">Bounty</p>
+            <p className="text-sm font-medium text-black/60">Grants</p>
             </Link>
 
           </div>
