@@ -6,15 +6,16 @@ import App from './App.jsx'
 import '@fontsource-variable/inter';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { AppKitProvider } from '@reown/appkit/react'
+import { baseSepolia } from 'viem/chains'
 
 const queryClient = new QueryClient()
 
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    <AppKitProvider  projectId="YOUR_PROJECT_ID"
+    <AppKitProvider  projectId="39620c2d95c222279e45e3862fba2338"
       networks={[
-        /* Your Networks */
+       baseSepolia
       ]}>
       <QueryClientProvider client={queryClient}>
         <App />
