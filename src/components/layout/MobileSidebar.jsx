@@ -1,7 +1,6 @@
 import React from "react";
 import { RiFileChart2Fill, RiHome2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import { RiAbout2Fill } from "react-icons/ri";
 
 export default function MobileSidebar() {
   return (
