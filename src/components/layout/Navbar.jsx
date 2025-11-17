@@ -44,10 +44,10 @@ export default function Navbar() {
           <div className="block md:hidden" onClick={() => setOpen(!open)}>
             <GiHamburgerMenu size={24} />
           </div>
-
+.flex
           <div className="flex gap-3 items-center">
             <Link to="/login">
-              <div className="px-4 py-2.5 rounded-xl bg-c-color text-white text-xs font-semibold">
+              <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold">
                 Sign up
               </div>
             </Link>
