@@ -9,7 +9,7 @@ export default function Layout() {
       {/* <Sidebar /> */}
       <div className="space-y-0 w-full relative">
         <Navbar />
-        <div className="max-w-[1280px] py-10 px-4 md:px-6 mx-auto">
+        <div className="max-w-[1320px] py-10 px-4 md:px-6 mx-auto">
           <Outlet />
         </div>
       </div>
