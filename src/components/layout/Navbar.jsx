@@ -52,11 +52,11 @@ export default function Navbar() {
             onClick={handleKebabClick}
           >
             <div className="w-12 h-12 rounded-full bg-c-color overflow-hidden">
-              <img src={user?.avatar} alt="" />
+              <img src={''} alt="" />
             </div>
             <div className="space-y-0">
               <p className="text-sm font-semibold capitalize">
-                {user?.fullName}
+                Guest
               </p>
               <p className="text-xs text-gray-500 capitalize">{user?.role}</p>
             </div>
