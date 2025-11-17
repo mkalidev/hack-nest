@@ -47,7 +47,7 @@ export default function Navbar() {
 
           <div className="flex gap-3 items-center">
             <Link to="/login">
-              <div className="px-4 py-2.5 rounded-full bg-c-color text-white text-xs font-semibold">
+              <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold">
                 Login
               </div>
             </Link>
