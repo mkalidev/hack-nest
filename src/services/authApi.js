@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getCookie } from "../components/libs/utils";
 
-const apiURL = import.meta.env.VITE_API_URL;
+const apiURL = import.meta.env.VITE_API_URL || "http://localhost:3000/api/";
 
 export async function signup(body) {
   try {
