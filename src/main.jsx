@@ -12,7 +12,10 @@ const queryClient = new QueryClient()
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    <AppKitProvider >
+    <AppKitProvider  projectId="YOUR_PROJECT_ID"
+      networks={[
+        /* Your Networks */
+      ]}>
       <QueryClientProvider client={queryClient}>
         <App />
       </QueryClientProvider>
