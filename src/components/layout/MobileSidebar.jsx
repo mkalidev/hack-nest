@@ -16,10 +16,6 @@ export default function MobileSidebar() {
           <RiHome2Fill className="text-2xl" />
           <span className="text-xl font-bold">Home</span>
         </Link>
-        <Link to="/about">
-          <RiAbout2Fill className="text-2xl" />
-          <span className="text-xl font-bold">About</span>
-        </Link>
       </div>
     </div>
   );
