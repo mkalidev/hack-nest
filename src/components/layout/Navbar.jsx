@@ -11,7 +11,7 @@ export default function Navbar() {
   const optionsRef = useRef(null);
 
   const { open: openAuth } = useAppKit();
-  const { address, isConnected } = useAppKitAccount();
+  const { address: _address, isConnected: _isConnected } = useAppKitAccount();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function Navbar() {
     };
   }, [showOption]);
 
-  const handleKebabClick = (e) => {
+  const _handleKebabClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
     setShowOption(!showOption);
@@ -66,7 +66,7 @@ export default function Navbar() {
 
           {/* <div
             className="hidden md:flex items-center gap-3 relative cursor-pointer"
-            onClick={handleKebabClick}
+            onClick={_handleKebabClick}
           >
             <div className="w-12 h-12 rounded-full bg-c-color overflow-hidden">
               <img src={''} alt="" />
