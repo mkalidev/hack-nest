@@ -6,7 +6,7 @@ import App from "./App.jsx";
 import "@fontsource-variable/inter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AppKitProvider } from "@reown/appkit/react";
-import { baseSepolia, base, celo, mainnet } from "viem/chains";
+import { baseSepolia, base, celo, mainnet } from "viem/
 const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")).render(
