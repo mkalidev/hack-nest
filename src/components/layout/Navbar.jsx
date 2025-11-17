@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CgChevronDown } from "react-icons/cg";
-import { useUser } from "../hooks/useUser";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
-import { useLogout } from "../hooks/useAuth";
+import { useLogout } from "../hooks/useAuth.js";
 import MobileSidebar from "./MobileSidebar";
 
 export default function Navbar() {
