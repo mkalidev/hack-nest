@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="w-full mx-auto py-5 bg-white sticky top-0 z-10 border-b border-black/10 h-fit md:h-[px]">
+      <div className="w-full mx-auto py-4 bg-white sticky top-0 z-10 border-b border-black/10 h-fit">
         <div className="mx-auto px-4 md:px-6 flex items-center h-full justify-between max-w-[1320px]">
           <Link to="/">
             <p className="font-semibold text-[16px] md:text-[20px]">
