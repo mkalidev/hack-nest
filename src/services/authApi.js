@@ -44,7 +44,7 @@ export async function getCurrentUser() {
     // Get token from cookies
     const token = getCookie("token"); // or whatever your cookie name is
 
-    const { data } = await axios.get(`${apiURL}auth/me`, {
+    const { data } = await axios.get(`${apiURL}users/me`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
