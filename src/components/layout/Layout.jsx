@@ -1,8 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import Footer from "./Footer";
-import MobileSidebar from "./MobileSidebar";
 import { Outlet } from "react-router-dom";
 
 export default function Layout() {
