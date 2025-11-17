@@ -5,4 +5,20 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  optimizeDeps: {
+    include: [
+      '@reown/appkit',
+      '@reown/appkit-adapter-wagmi',
+      '@reown/appkit/react',
+      '@reown/appkit/networks',
+      'wagmi',
+      'viem',
+    ],
+    exclude: [],
+  },
+  server: {
+    fs: {
+      strict: false,
+    },
+  },
 })
