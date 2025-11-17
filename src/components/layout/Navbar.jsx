@@ -9,6 +9,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const optionsRef = useRef(null);
 
+  const { signIn } = useAppKit();
+
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -60,7 +62,6 @@ export default function Navbar() {
               <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold">
                 Sign up
               </div>
-            </Link>
 
           {/* <div
             className="hidden md:flex items-center gap-3 relative cursor-pointer"
