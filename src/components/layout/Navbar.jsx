@@ -45,7 +45,10 @@ export default function Navbar() {
           <div className="block md:hidden" onClick={() => setOpen(!open)}>
             <GiHamburgerMenu size={24} />
           </div>
-          <div
+
+.flex.gap-3.items-center
+
+          {/* <div
             className="hidden md:flex items-center gap-3 relative cursor-pointer"
             onClick={handleKebabClick}
           >
@@ -79,7 +82,7 @@ export default function Navbar() {
                 </div>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
       {open && <MobileSidebar setOpen={setOpen} />}
