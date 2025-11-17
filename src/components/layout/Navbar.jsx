@@ -11,7 +11,7 @@ export default function Navbar() {
   const optionsRef = useRef(null);
 
   const { open: openAuth } = useAppKit();
-  const {address} = useAppKitAccount()
+  const { address, isConnected } = useAppKitAccount();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -50,20 +50,19 @@ export default function Navbar() {
           </div>
           <div className="flex gap-6 items-center">
             <Link to="/">
-            <p className="text-sm font-medium text-black/60">Bounties</p>
+              <p className="text-sm font-medium text-black/60">Bounties</p>
             </Link>
             <Link to="/">
-            <p className="text-sm font-medium text-black/60">Hackathon</p>
+              <p className="text-sm font-medium text-black/60">Hackathon</p>
             </Link>
             <Link to="/">
-            <p className="text-sm font-medium text-black/60">Grants</p>
+              <p className="text-sm font-medium text-black/60">Grants</p>
             </Link>
-
           </div>
-            
-              <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold">
-                Sign up
-              </div>
+
+          <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold">
+            Sign up
+          </div>
 
           {/* <div
             className="hidden md:flex items-center gap-3 relative cursor-pointer"
