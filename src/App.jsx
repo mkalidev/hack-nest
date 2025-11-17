@@ -7,13 +7,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Routes>
-
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-        </Route>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+          </Route>
+        </Routes>
       </BrowserRouter>
-      </Routes>
     </>
   );
 }
