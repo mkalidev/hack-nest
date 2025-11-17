@@ -6,7 +6,8 @@ import App from './App.jsx'
 import '@fontsource-variable/inter';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { AppKitProvider } from '@reown/appkit/react'
-import { baseSepolia } from '@re'
+import { baseSepolia } from 'viem/chains'
+import { base, celo, mainnet } from 'viem/chains'
 
 const queryClient = new QueryClient()
 
@@ -15,7 +16,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AppKitProvider  projectId="39620c2d95c222279e45e3862fba2338"
       networks={[
-       baseSepolia
+       baseSepolia, base, celo, mainnet
       ]}>
       <QueryClientProvider client={queryClient}>
         <App />
