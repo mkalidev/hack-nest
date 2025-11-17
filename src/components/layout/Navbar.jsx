@@ -45,7 +45,9 @@ export default function Navbar() {
             <GiHamburgerMenu size={24} />
           </div>
           <div className="flex gap-3 items-center">
-          
+          <Link to="/login">
+          <p className="text-xs font-semibold">Bounty</p>
+          </Link>
 
           </div>
             <Link to="/login">
