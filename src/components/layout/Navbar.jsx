@@ -3,14 +3,15 @@ import { CgChevronDown } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import MobileSidebar from "./MobileSidebar";
-import { useAppKit } from "@reown/appkit/react";
+import { useAppKit, useAppKitAccount } from "@reown/appkit/react";
 
 export default function Navbar() {
   const [showOption, setShowOption] = useState(false);
   const [open, setOpen] = useState(false);
   const optionsRef = useRef(null);
 
-  const { open: openAuth, close: closeAuth } = useAppKit();
+  const { open: openAuth } = useAppKit();
+  const {address} = useAppKitAccount()
 
   // Close dropdown when clicking outside
   useEffect(() => {
