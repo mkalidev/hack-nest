@@ -46,7 +46,11 @@ export default function Navbar() {
             <GiHamburgerMenu size={24} />
           </div>
 
-.flex.gap-3.items-center
+<div className="flex gap-3 items-center">
+  <Link to="/login">
+  <div className="px-4 py-2 5"></div>
+  </Link>
+</div>
 
           {/* <div
             className="hidden md:flex items-center gap-3 relative cursor-pointer"
