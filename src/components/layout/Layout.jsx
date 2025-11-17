@@ -6,7 +6,6 @@ import { Outlet } from "react-router-dom";
 export default function Layout() {
   return (
     <div className="w-full flex gap-0 relative h-full">
-      {/* <NetworkStatusBanner /> */}
       <Sidebar />
       <div className="space-y-0 w-full relative">
         <Navbar />
