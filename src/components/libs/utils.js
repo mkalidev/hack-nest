@@ -36,10 +36,6 @@ export const truncateAddress = (
 
 /**
  * Formats a number with commas and optional decimal places
- * @param {number|string} number - The number to format
- * @param {number} decimals - Number of decimal places (default: 0)
- * @param {string} locale - Locale string (default: 'en-US')
- * @returns {string} Formatted number
  */
 export const formatNumber = (number, decimals = 0, locale = 'en-US') => {
   if (number === null || number === undefined || isNaN(Number(number)))
@@ -52,10 +48,6 @@ export const formatNumber = (number, decimals = 0, locale = 'en-US') => {
 
 /**
  * Formats a number as currency
- * @param {number|string} amount - The amount to format
- * @param {string} currency - Currency code (default: 'USD')
- * @param {string} locale - Locale string (default: 'en-US')
- * @returns {string} Formatted currency string
  */
 export const formatCurrency = (
   amount,
@@ -72,9 +64,6 @@ export const formatCurrency = (
 
 /**
  * Formats a number with K, M, B suffixes (e.g., 1.5K, 2.3M)
- * @param {number|string} number - The number to format
- * @param {number} decimals - Number of decimal places (default: 1)
- * @returns {string} Formatted number with suffix
  */
 export const formatNumberCompact = (number, decimals = 1) => {
   if (number === null || number === undefined || isNaN(Number(number)))
