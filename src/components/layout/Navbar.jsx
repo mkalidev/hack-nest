@@ -10,8 +10,6 @@ export default function Navbar() {
   const [showOption, setShowOption] = useState(false);
   const [open, setOpen] = useState(false);
   const optionsRef = useRef(null);
-  const { user } = useUser();
-  const { logoutFn } = useLogout();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -43,7 +41,7 @@ export default function Navbar() {
           <Link to="/">
             <p className="font-semibold text-[16px] md:text-[20px]">
               Welcome,{" "}
-              <span className="text-c-color capitalize">{user?.username}</span>
+              <span className="text-c-color capitalize">Guest</span>
             </p>
           </Link>
           <div className="block md:hidden" onClick={() => setOpen(!open)}>
