@@ -7,14 +7,15 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main className="flex-1">
-        <Outlet />
-      </main>
+    <div className="w-full flex gap-0 relative h-full">
+      {/* <NetworkStatusBanner /> */}
       <Sidebar />
-      <Footer />
-      <MobileSidebar />
+      <div className="space-y-0 w-full relative">
+        <Navbar />
+        <div className="max-w-[1280px] py-10 px-4 md:px-6 mx-auto">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 }
