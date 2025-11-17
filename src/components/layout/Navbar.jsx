@@ -60,7 +60,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold">
+          <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold" onClick={() => openAuth()}>
             Sign up
           </div>
 
