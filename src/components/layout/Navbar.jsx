@@ -46,7 +46,7 @@ export default function Navbar() {
           </div>
           <div className="flex gap-3 items-center">
           <Link to="/login">
-          <p className="text-sm font-medium text-bla">Bounty</p>
+          <p className="text-sm font-medium text-black/60">Bounty</p>
           </Link>
 
           </div>
