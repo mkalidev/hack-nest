@@ -1,8 +1,7 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
 
-export default function Container() {
+export default function Container({ children }) {
   return (
-    <div className='w-full max-w-[1320px] mx-auto'><Outlet /></div>
+    <div className='w-full max-w-[1320px] mx-auto'>{children}</div>
   )
 }
