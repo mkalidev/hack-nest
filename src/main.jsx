@@ -6,7 +6,7 @@ import App from './App.jsx'
 import '@fontsource-variable/inter';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { AppKitProvider } from '@reown/appkit/react'
-import { baseSepolia } from 'viem/chains'
+import { baseSepolia } from '@re'
 
 const queryClient = new QueryClient()
 
