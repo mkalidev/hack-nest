@@ -78,7 +78,7 @@ export default function Opportunities() {
                   <GoCheckCircleFill size={16} className="text-c-color" />
                 </div>
                 <div className="flex gap-1.5 items-center">
-                  <HiLightningBolt size={16} className="text-yellow-500" />
+                  <HiLightningBolt size={16} className="text-black/60" />
                   <p className="text-sm font-medium text-black/60">Bounty</p>
                 </div>
               </div>
