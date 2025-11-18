@@ -5,10 +5,10 @@ export default function Opportunities() {
   return (
     <div className="w-full space-y-4">
       <div className="w-full flex gap-5 items-center justify-between">
-        <h2 className="text-2xl font-bold">Latest Opportunities</h2>
+        <h2 className="text-xl font-semibold">Latest Opportunities</h2>
         <div className="flex gap-3 items-center">
           <RiFilter3Fill />
-          <p>Filter</p>
+          <p className="text-sm font-medium text-black/60">Filter</p>
         </div>
       </div>
       <p className="text-sm text-gray-500">
