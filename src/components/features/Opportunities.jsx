@@ -11,9 +11,7 @@ export default function Opportunities() {
           <p className="text-sm font-medium text-black/60">Filter</p>
         </div>
       </div>
-      <p className="text-sm text-gray-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-      </p>
+      
     </div>
   );
 }
