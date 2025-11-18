@@ -70,7 +70,7 @@ export default function Opportunities() {
                 alt={""}
                 className="w-20 h-20 bg-c-color/10 object-cover"
               />
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-2">
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <div className="flex gap-2 items-center">
                   <h3 className="text-sm font-medium text-black/80">
@@ -83,7 +83,7 @@ export default function Opportunities() {
                     <HiLightningBolt size={15} className="text-black/60" />
                     <p className="text-xs font-medium text-black/60">Bounty</p>
                   </div>
-                  <div className="w-[1.5px] h-full bg-black/30" />
+                  <div className="w-[1.5px] h-4 bg-black/30" />
                   <div className="flex gap-1.5 items-center">
                     {/* <HiLightningBolt size={15} className="text-black/60" /> */}
                     <p className="text-xs font-medium text-black/60">
