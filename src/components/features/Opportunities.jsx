@@ -52,7 +52,6 @@ export default function Opportunities() {
             {tab.name}
           </div>
         ))}
-        
       </div>
     </div>
   );
