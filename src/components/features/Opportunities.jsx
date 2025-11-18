@@ -74,7 +74,17 @@ export default function Opportunities() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-full bg-white flex flex-col md:flex-row justify-between gap-4 items-center rounded-md p-4 hover:border hover:border-gray-200 hover:shadow-md hover:-translate-y-0.5 cursor-pointer transition-all duration-300"
+            className="w-full bg-white flex flex-col md:flex-row justify-between gap-4 items-center rounded-md p-4 border border-transparent hover-card cursor-pointer transition-all duration-300"
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = '#e5e7eb';
+              e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = 'transparent';
+              e.currentTarget.style.boxShadow = '';
+              e.currentTarget.style.transform = '';
+            }}
           >
             <div className="flex flex-col items-start md:flex-row gap-4">
               <img
