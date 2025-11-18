@@ -58,9 +58,16 @@ export default function Opportunities() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-full bg-white flex gap-4 items-center rounded-lg p-4 border border-black/10 hover:bg-white cursor-pointer feature-card transition-all duration-300"
+            className="w-full bg-white flex flex-col md:flex-row justify-between gap-4 items-center rounded-lg p-4 border border-black/10 hover:bg-white cursor-pointer feature-card transition-all duration-300"
           >
             <h3 className="text-lg font-semibold">{item.title}</h3>
+            <div className="flex gap-2 items-center">
+              {item.tags.map((tag) => (
+                <div key={tag} className="text-sm text-black/60">
+                  {tag}
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>
