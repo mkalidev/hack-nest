@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RiFilter3Fill } from "react-icons/ri";
 import { data } from "../data/data";
 import { GoCheckCircleFill } from "react-icons/go";
+import { HiLightningBolt } from "react-icons/hi";
 
 export default function Opportunities() {
   const [activeTab, setActiveTab] = useState("all");
@@ -76,7 +77,9 @@ export default function Opportunities() {
                   </h3>
                   <GoCheckCircleFill size={16} className="text-c-color" />
                 </div>
-                <div className="flex gap-3 items-center"></div>
+                <div className="flex gap-3 items-center">
+                <HiLightningBolt size={16} className="text-c-color" />
+                </div>
               </div>
             </div>
             <div className="flex gap-2 items-center">
