@@ -69,9 +69,9 @@ export default function Opportunities() {
                 className="w-24 h-24 bg-c-color/10 object-cover"
               />
               <div className="flex flex-col gap-1">
-                <h3 className="text-lg font-medium">{item.title}</h3>
+                <h3 className="text-lg font-semibold">{item.title}</h3>
                 <div className="flex gap-2">
-                  <h3 className="text-sm font-semibold text-black/60">
+                  <h3 className="text-sm font-medium text-black/60">
                     {item.company}
                   </h3>
                   <GoCheckCircleFill size={16} className="text-c-color" />
