@@ -85,8 +85,20 @@ export default function Opportunities() {
                   <div className="w-[1.5px] h-full bg-black/30" />
                   <div className="flex gap-1.5 items-center">
                     {/* <HiLightningBolt size={15} className="text-black/60" /> */}
-                    <p className="text-xs font-medium text-black/60">Due in 3d</p>
+                    <p className="text-xs font-medium text-black/60">
+                      Due in 3d
+                    </p>
                   </div>
+                </div>
+                <div className="flex gap-2 items-center">
+                  {item.tags.map((tag) => (
+                    <div
+                      key={tag}
+                      className="text-xs font-medium text-black/60 px-2 py-1 rounded-md bg-black/5"
+                    >
+                      {tag}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
