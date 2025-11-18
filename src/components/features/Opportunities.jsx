@@ -7,7 +7,7 @@ export default function Opportunities() {
       <div className="w-full flex gap-5 items-center justify-between">
         <h2 className="text-xl font-semibold">Latest Opportunities</h2>
         <div className="flex gap-3 items-center">
-          <RiFilter3Fill />
+          <RiFilter3Fill size={20} />
           <p className="text-sm font-medium text-black/60">Filter</p>
         </div>
       </div>
