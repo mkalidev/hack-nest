@@ -2,18 +2,26 @@ import React, { useState } from "react";
 import { RiFilter3Fill } from "react-icons/ri";
 
 export default function Opportunities() {
+  const [activeTab, setActiveTab] = useState("all");
 
-    const [a, setTabs] = useState()
-
-    const tabs = [
-        {
-            name: "All",
-            value: "all"
-        },
-        {
-            name: "Bounties",
-        }
-    ]
+  const tabs = [
+    {
+      name: "All",
+      value: "all",
+    },
+    {
+      name: "Design",
+      value: "design",
+    },
+    {
+      name: "Development",
+      value: "development",
+    },
+    {
+      name: "AI",
+      value: "ai",
+    },
+  ];
   return (
     <div className="w-full space-y-4">
       <div className="w-full flex gap-5 items-center justify-between">
