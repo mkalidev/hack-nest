@@ -68,7 +68,7 @@ export default function Opportunities() {
               />
               <div className="flex flex-col gap-2">
                 <h3 className="text-lg font-semibold">{item.title}</h3>
-                <h3 className="text-sm font-semibold">{item.company}</h3>
+                <h3 className="text-sm font-semibold text-black/60">{item.company}</h3>
                 <p className="text-sm text-black/60">{item.companyLocation}</p>
             <div className="flex gap-2 items-center">
               {item.tags.map((tag) => (
