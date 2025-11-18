@@ -1,4 +1,4 @@
-data = [
+export const data = [
     {
         id: 1,
         title: "Web Development",
@@ -9,7 +9,7 @@ data = [
         status: "active",
         type: "full-time",
         location: "Remote",
-        salary: 100000,
+        reward: 100000,
         company: "Google",
         companyLogo: "https://www.google.com/logo.png",
         companyWebsite: "https://www.google.com",
