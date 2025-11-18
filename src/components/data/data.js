@@ -19,5 +19,17 @@ export const data = [
         companyType: "Public",
         companyFounded: 2004,
         companyCEO: "Sundar Pichai",
+    },
+    {
+        id: 2,
+        title: "Mobile Development",
+        description: "We are looking for a mobile developer who can help us build a mobile app for our company.",
+        tags: ["React Native", "Node.js", "Express", "MongoDB"],
+        createdAt: "2021-01-01",
+        updatedAt: "2021-01-01",
+        status: "active",
+        type: "full-time",
+        location: "Remote",
+        reward: 100000,
     }
 ]
