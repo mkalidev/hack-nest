@@ -21,6 +21,14 @@ export default function Opportunities() {
       name: "AI",
       value: "ai",
     },
+    {
+      name: "Blockchain",
+      value: "blockchain",
+    },
+    {
+      name: "Other",
+      value: "other",
+    },
   ];
   return (
     <div className="w-full space-y-4">
@@ -31,8 +39,12 @@ export default function Opportunities() {
           <p className="text-sm font-medium text-black/60">Filter</p>
         </div>
       </div>
-      <div className="w-full flex gap-3 items-center">
-        <div className="">All</div>
+      <div className="w-full flex gap-2 items-center">
+        {tabs.map((tab) => (
+          <div className={`${activeTab === tab.value ? "bg-c-color text-white" : "bg-white text-black/60"} px-4 py-2 rounded-lg cursor-pointer`} onClick={() => setActiveTab(tab.value)}>
+            {tab.name}
+          </div>
+        ))}
       </div>
     </div>
   );
