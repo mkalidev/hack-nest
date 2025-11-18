@@ -9,7 +9,7 @@ export default function Layout() {
       {/* <Sidebar /> */}
       <div className="space-y-0 w-full relative">
         <Navbar />
-        <div className="w-full h-[280px] bg-linear-to-br from-purple-700 to-black"></div>
+        <div className="w-full h-[350px] bg-linear-to-br from-purple-700 to-black"></div>
         <div className="max-w-[1320px] py-5 px-4 md:px-6 mx-auto">
           <Outlet />
         </div>
