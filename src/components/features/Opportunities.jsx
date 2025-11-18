@@ -32,7 +32,7 @@ export default function Opportunities() {
       value: "other",
     },
   ];
-  
+
   return (
     <div className="w-full space-y-4">
       <div className="w-full flex gap-5 items-center justify-between">
@@ -66,7 +66,7 @@ export default function Opportunities() {
               <img
                 src={item.companyLogo}
                 alt={""}
-                className="w-24 h-24 bg-c-color/10 object-cover"
+                className="w-24 h-24 bg-c-color/10"
               />
               <div className="flex flex-col gap-2">
                 <h3 className="text-lg font-semibold">{item.title}</h3>
