@@ -72,7 +72,7 @@ export default function Opportunities() {
               <div className="flex flex-col gap-1">
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <div className="flex gap-2">
-                  <h3 className="text-sm font-medium text-black/60">
+                  <h3 className="text-sm font-normal text-black/60">
                     {item.company}
                   </h3>
                   <GoCheckCircleFill size={16} className="text-c-color" />
@@ -84,7 +84,7 @@ export default function Opportunities() {
                   </div>
                   <div className="w-[1.5px] h-full bg-black/30" />
                   <div className="flex gap-1.5 items-center">
-                    <HiLightningBolt size={15} className="text-black/60" />
+                    {/* <HiLightningBolt size={15} className="text-black/60" /> */}
                     <p className="text-xs font-medium text-black/60">Due in 3d</p>
                   </div>
                 </div>
