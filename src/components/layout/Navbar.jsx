@@ -67,7 +67,7 @@ export default function Navbar() {
 
           {/* <div
             className="hidden md:flex items-center gap-3 relative cursor-pointer"
-            onClick={handleKebabClick}
+            onClick={_handleKebabClick}
           >
             <div className="w-12 h-12 rounded-full bg-c-color overflow-hidden">
               <img src={''} alt="" />
