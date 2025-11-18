@@ -104,7 +104,7 @@ export default function Opportunities() {
               </div>
             </div>
             <div className="flex gap-2 items-center">
-             {formatCurrency(item.reward)}
+              {formatCurrency(item.reward)}
             </div>
           </div>
         ))}
