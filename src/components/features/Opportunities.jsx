@@ -80,12 +80,12 @@ export default function Opportunities() {
                 <div className="flex items-center gap-3">
                   <div className="flex gap-1.5 items-center">
                     <HiLightningBolt size={15} className="text-black/60" />
-                    <p className="text-xs font-light text-black/60">Bounty</p>
+                    <p className="text-xs font-medium text-black/60">Bounty</p>
                   </div>
                   <div className="w-[1.5px] h-full bg-black/30" />
                   <div className="flex gap-1.5 items-center">
                     <HiLightningBolt size={15} className="text-black/60" />
-                    <p className="text-xs font-light text-black/60">Due in 3d</p>
+                    <p className="text-xs font-medium text-black/60">Due in 3d</p>
                   </div>
                 </div>
               </div>
