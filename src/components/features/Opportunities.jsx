@@ -46,7 +46,7 @@ export default function Opportunities() {
               activeTab === tab.value
                 ? "bg-c-color text-white"
                 : "bg-white text-black/60 border border-black/10"
-            } px-4 py-2 rounded-lg cursor-pointer`}
+            } px-4 py-2 rounded-xl cursor-pointer text-sm`}
             onClick={() => setActiveTab(tab.value)}
           >
             {tab.name}
