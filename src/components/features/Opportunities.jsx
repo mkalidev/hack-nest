@@ -76,6 +76,7 @@ export default function Opportunities() {
                   </h3>
                   <GoCheckCircleFill size={16} className="text-c-color" />
                 </div>
+                <div className="flex gap-3 items-center"></div>
               </div>
             </div>
             <div className="flex gap-2 items-center">
