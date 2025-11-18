@@ -71,14 +71,37 @@ body {
   background-clip: text;
 }
 
-/* Smooth hover transitions */
+/* Smooth hover transitions - Firefox compatible */
 .feature-card {
   transition: all 0.3s ease;
+  will-change: transform, background-color, box-shadow;
 }
 
 .feature-card:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.25);
+}
+
+/* Firefox hover fixes for interactive elements */
+.hover-tab {
+  pointer-events: auto;
+  will-change: background-color, color;
+}
+
+.hover-tab:hover {
+  background-color: #f3f4f6 !important;
+  color: #000000 !important;
+}
+
+.hover-card {
+  pointer-events: auto;
+  will-change: transform, border-color, box-shadow;
+}
+
+.hover-card:hover {
+  border-color: #e5e7eb !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* Custom scrollbar for the auth layout */
