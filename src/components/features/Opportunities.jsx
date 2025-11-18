@@ -78,7 +78,7 @@ export default function Opportunities() {
                   </h3>
                   <GoCheckCircleFill size={16} className="text-c-color" />
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 py-1">
                   <div className="flex gap-1.5 items-center">
                     <HiLightningBolt size={15} className="text-black/60" />
                     <p className="text-xs font-medium text-black/60">Bounty</p>
