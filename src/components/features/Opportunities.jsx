@@ -70,7 +70,7 @@ export default function Opportunities() {
                 alt={""}
                 className="w-20 h-20 bg-c-color/10 object-cover"
               />
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1.5">
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <div className="flex gap-2 items-center">
                   <h3 className="text-sm font-medium text-black/80">
