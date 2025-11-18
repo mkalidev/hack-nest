@@ -83,7 +83,7 @@ export default function Opportunities() {
             </div>
               </div>
             </div>
-          </div>
+          
         ))}
       </div>
     </div>
