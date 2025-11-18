@@ -77,13 +77,13 @@ export default function Opportunities() {
                   <GoCheckCircleFill size={16} className="text-c-color" />
                 </div>
               </div>
-              <div className="flex gap-2 items-center">
-                {item.tags.map((tag) => (
-                  <div key={tag} className="text-sm text-black/60">
-                    {tag}
-                  </div>
-                ))}
-              </div>
+            </div>
+            <div className="flex gap-2 items-center">
+              {item.tags.map((tag) => (
+                <div key={tag} className="text-sm text-black/60">
+                  {tag}
+                </div>
+              ))}
             </div>
           </div>
         ))}
