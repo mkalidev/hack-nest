@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { RiFilter3Fill } from "react-icons/ri";
 import { data } from "../data/data";
-import { BiCheckCircle } from "react-icons/bi";
 import { GoCheckCircleFill } from "react-icons/go";
 
 export default function Opportunities() {
@@ -33,6 +32,7 @@ export default function Opportunities() {
       value: "other",
     },
   ];
+  
   return (
     <div className="w-full space-y-4">
       <div className="w-full flex gap-5 items-center justify-between">
