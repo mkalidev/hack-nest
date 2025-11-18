@@ -56,7 +56,10 @@ export default function Opportunities() {
       </div>
       <div className="w-full flex flex-col gap-4">
         {data.map((item) => (
-          <div key={item.id} className="w-full bg-white rounded-lg p-4 border border-black/10 hover:bg-white transition-all duration-300">
+          <div
+            key={item.id}
+            className="w-full bg-white rounded-lg p-4 border border-black/10 hover:bg-white cursor-pointer feature-card transition-all duration-300"
+          >
             <h3 className="text-lg font-semibold">{item.title}</h3>
           </div>
         ))}
