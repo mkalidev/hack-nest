@@ -50,9 +50,21 @@ export default function Opportunities() {
             className={`${
               activeTab === tab.value
                 ? "bg-c-color text-white border border-c-color"
-                : "text-black/60 border border-black/10"
-            } px-4 py-2 rounded-lg cursor-pointer text-sm transition-all duration-300 hover:bg-gray-100 hover:text-black`}
+                : "text-black/60 border border-black/10 hover-tab"
+            } px-4 py-2 rounded-lg cursor-pointer text-sm transition-all duration-300`}
             onClick={() => setActiveTab(tab.value)}
+            onMouseEnter={(e) => {
+              if (activeTab !== tab.value) {
+                e.currentTarget.style.backgroundColor = '#f3f4f6';
+                e.currentTarget.style.color = '#000000';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (activeTab !== tab.value) {
+                e.currentTarget.style.backgroundColor = '';
+                e.currentTarget.style.color = '';
+              }
+            }}
           >
             {tab.name}
           </div>
