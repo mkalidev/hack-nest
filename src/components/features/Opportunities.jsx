@@ -64,9 +64,9 @@ export default function Opportunities() {
           >
             <div className="flex flex-col md:flex-row gap-4">
               <img
-                src='/'
+                src='/103780637.png'
                 alt={""}
-                className="w-24 h-24 bg-c-color/10 object-cover"
+                className="w-20 h-20 bg-c-color/10 object-cover"
               />
               <div className="flex flex-col gap-1">
                 <h3 className="text-lg font-semibold">{item.title}</h3>
