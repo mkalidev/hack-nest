@@ -44,7 +44,7 @@ export default function Opportunities() {
           <div
             className={`${
               activeTab === tab.value
-                ? "bg-c-color text-white"
+                ? "bg-c-color text-white border border-c-color"
                 : "text-black/60 border border-black/10"
             } px-4 py-2 rounded-lg cursor-pointer text-sm !hover:bg-c-color !hover:text-black transition-all duration-300`}
             onClick={() => setActiveTab(tab.value)}
@@ -52,6 +52,7 @@ export default function Opportunities() {
             {tab.name}
           </div>
         ))}
+        
       </div>
     </div>
   );
