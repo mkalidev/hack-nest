@@ -66,7 +66,10 @@ export default function Opportunities() {
                 alt={""}
                 className="w-24 h-24 bg-c-color/10 object-cover"
               />
-              <h3 className="text-lg font-semibold">{item.company}</h3>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-lg font-semibold">{item.company}</h3>
+                <p className="text-sm text-black/60">{item.companyLocation}</p>
+              </div>
             <h3 className="text-lg font-semibold">{item.title}</h3>
             </div>
             <div className="flex gap-2 items-center">
