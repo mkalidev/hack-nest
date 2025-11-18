@@ -41,7 +41,14 @@ export default function Opportunities() {
       </div>
       <div className="w-full flex gap-2 items-center">
         {tabs.map((tab) => (
-          <div className={`${activeTab === tab.value ? "bg-c-color text-white" : "bg-white text-black/60"} px-4 py-2 rounded-lg cursor-pointer`} onClick={() => setActiveTab(tab.value)}>
+          <div
+            className={`${
+              activeTab === tab.value
+                ? "bg-c-color text-white border border-c-color"
+                : "bg-white text-black/60"
+            } px-4 py-2 rounded-lg cursor-pointer`}
+            onClick={() => setActiveTab(tab.value)}
+          >
             {tab.name}
           </div>
         ))}
