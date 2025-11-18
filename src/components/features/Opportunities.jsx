@@ -50,8 +50,8 @@ export default function Opportunities() {
             className={`${
               activeTab === tab.value
                 ? "bg-c-color text-white border border-c-color"
-                : "text-black/60 border border-black/10 hover:bg-c-color/10 hover:text-black"
-            } px-4 py-2 rounded-lg cursor-pointer text-sm transition-all duration-300`}
+                : "text-black/60 border border-black/10 hover:bg-gray-100 hover:text-black"
+            } px-4 py-2 rounded-lg cursor-pointer text-sm transition-all duration-300 hover:bg-gray-100 hover:text-black`}
             onClick={() => setActiveTab(tab.value)}
           >
             {tab.name}
