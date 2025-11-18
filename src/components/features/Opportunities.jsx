@@ -64,7 +64,7 @@ export default function Opportunities() {
           >
             <div className="flex flex-col md:flex-row gap-4">
               <img
-                src={item.companyLogo}
+                src='/'
                 alt={""}
                 className="w-24 h-24 bg-c-color/10 object-cover"
               />
