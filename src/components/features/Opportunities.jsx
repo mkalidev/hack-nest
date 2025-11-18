@@ -73,7 +73,6 @@ export default function Opportunities() {
                   <h3 className="text-sm font-semibold text-black/60">{item.company}</h3>
                   <BiCheckCircle size={16} className="text-green-500" />
                 </div>
-                  <p className="text-sm text-black/60">{item.companyLocation}</p>
               </div>
             <div className="flex gap-2 items-center">
               {item.tags.map((tag) => (
