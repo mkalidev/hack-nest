@@ -2,6 +2,9 @@ import React from "react";
 import { RiFilter3Fill } from "react-icons/ri";
 
 export default function Opportunities() {
+
+    
+
   return (
     <div className="w-full space-y-4">
       <div className="w-full flex gap-5 items-center justify-between">
@@ -11,7 +14,9 @@ export default function Opportunities() {
           <p className="text-sm font-medium text-black/60">Filter</p>
         </div>
       </div>
-      .w-full.flex.
+      <div className="w-full flex gap-3 items-center">
+        <div className="">All</div>
+      </div>
     </div>
   );
 }
