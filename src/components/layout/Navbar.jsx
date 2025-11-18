@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import MobileSidebar from "./MobileSidebar";
 import { useAppKit, useAppKitAccount } from "@reown/appkit/react";
+import { truncateAddress } from "../libs/utils";
 
 export default function Navbar() {
   const [showOption, setShowOption] = useState(false);
@@ -30,7 +31,7 @@ export default function Navbar() {
     };
   }, [showOption]);
 
-  const handleKebabClick = (e) => {
+  const _handleKebabClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
     setShowOption(!showOption);
@@ -60,8 +61,8 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold" onClick={openAuth}>
-            Sign up
+          <div className="px-4 py-2.5 rounded-lg bg-c-color text-white text-xs font-semibold cursor-pointer" onClick={openAuth}>
+            {isConnected && address ? truncateAddress(address) : "Sign up"}
           </div>
 
           {/* <div
