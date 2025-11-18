@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { RiFilter3Fill } from "react-icons/ri";
+import { data } from "../data/data";
 
 export default function Opportunities() {
   const [activeTab, setActiveTab] = useState("all");
@@ -50,6 +51,13 @@ export default function Opportunities() {
             onClick={() => setActiveTab(tab.value)}
           >
             {tab.name}
+          </div>
+        ))}
+      </div>
+      <div className="w-full flex flex-col gap-4">
+        {data.map((item) => (
+          <div key={item.id} className="w-full bg-white rounded-lg p-4">
+            <h3 className="text-lg font-semibold">{item.title}</h3>
           </div>
         ))}
       </div>
