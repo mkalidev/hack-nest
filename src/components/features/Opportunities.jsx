@@ -32,7 +32,7 @@ export default function Opportunities() {
       value: "other",
     },
   ];
-  
+
   return (
     <div className="w-full space-y-4">
       <div className="w-full flex gap-5 items-center justify-between">
@@ -71,20 +71,21 @@ export default function Opportunities() {
               <div className="flex flex-col gap-1">
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <div className="flex gap-2">
-                  <h3 className="text-sm font-semibold text-black/60">{item.company}</h3>
+                  <h3 className="text-sm font-semibold text-black/60">
+                    {item.company}
+                  </h3>
                   <GoCheckCircleFill size={16} className="text-c-color" />
                 </div>
               </div>
-            <div className="flex gap-2 items-center">
-              {item.tags.map((tag) => (
-                <div key={tag} className="text-sm text-black/60">
-                  {tag}
-                </div>
-              ))}
-            </div>
+              <div className="flex gap-2 items-center">
+                {item.tags.map((tag) => (
+                  <div key={tag} className="text-sm text-black/60">
+                    {tag}
+                  </div>
+                ))}
               </div>
             </div>
-          
+          </div>
         ))}
       </div>
     </div>
