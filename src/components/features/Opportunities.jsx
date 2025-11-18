@@ -3,7 +3,7 @@ import { RiFilter3Fill } from "react-icons/ri";
 
 export default function Opportunities() {
 
-    
+    const [tabs, setTabs] = useState()
 
   return (
     <div className="w-full space-y-4">
