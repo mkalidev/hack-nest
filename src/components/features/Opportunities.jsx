@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RiFilter3Fill } from "react-icons/ri";
 import { data } from "../data/data";
+import { BiCheckCircle } from "react-icons/bi";
 
 export default function Opportunities() {
   const [activeTab, setActiveTab] = useState("all");
@@ -70,7 +71,7 @@ export default function Opportunities() {
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <div className="flex gap-2">
                   <h3 className="text-sm font-semibold text-black/60">{item.company}</h3>
-                  <Check
+                  <BiCheckCircle size={16} className="text-green-500" />
                 </div>
                   <p className="text-sm text-black/60">{item.companyLocation}</p>
               </div>
