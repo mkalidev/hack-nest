@@ -3,6 +3,7 @@ import { RiFilter3Fill } from "react-icons/ri";
 import { data } from "../data/data";
 import { GoCheckCircleFill } from "react-icons/go";
 import { HiLightningBolt } from "react-icons/hi";
+import { formatCurrency } from "../libs/utils";
 
 export default function Opportunities() {
   const [activeTab, setActiveTab] = useState("all");
@@ -103,11 +104,7 @@ export default function Opportunities() {
               </div>
             </div>
             <div className="flex gap-2 items-center">
-              {item.tags.map((tag) => (
-                <div key={tag} className="text-sm text-black/60">
-                  {tag}
-                </div>
-              ))}
+             {formatCurrency(item.reward)}
             </div>
           </div>
         ))}
