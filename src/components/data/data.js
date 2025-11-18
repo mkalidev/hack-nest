@@ -1,1 +1,23 @@
-data
+data = [
+    {
+        id: 1,
+        title: "Web Development",
+        description: "We are looking for a web developer who can help us build a website for our company.",
+        tags: ["React", "Node.js", "Express", "MongoDB"],
+        createdAt: "2021-01-01",
+        updatedAt: "2021-01-01",
+        status: "active",
+        type: "full-time",
+        location: "Remote",
+        salary: 100000,
+        company: "Google",
+        companyLogo: "https://www.google.com/logo.png",
+        companyWebsite: "https://www.google.com",
+        companyLocation: "Remote",
+        companyIndustry: "Technology",
+        companySize: 10000,
+        companyType: "Public",
+        companyFounded: 2004,
+        companyCEO: "Sundar Pichai",
+    }
+]
