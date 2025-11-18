@@ -60,11 +60,11 @@ export default function Opportunities() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="w-full bg-white flex flex-col md:flex-row justify-between gap-4 items-center rounded-lg p-4 border border-black/10 hover:bg-white cursor-pointer feature-card transition-all duration-300"
+            className="w-full bg-white flex flex-col md:flex-row justify-between gap-4 items-center rounded-md p-4 border border-black/10 hover:bg-white cursor-pointer feature-card transition-all duration-300"
           >
             <div className="flex flex-col md:flex-row gap-4">
               <img
-                src='/103780637.png'
+                src="/103780637.png"
                 alt={""}
                 className="w-20 h-20 bg-c-color/10 object-cover"
               />
