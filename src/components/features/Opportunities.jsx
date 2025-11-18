@@ -82,7 +82,12 @@ export default function Opportunities() {
                     <HiLightningBolt size={16} className="text-black/60" />
                     <p className="text-sm font-medium text-black/60">Bounty</p>
                   </div>
-                  <div className="w-[1px] h-full bg-black/50" />
+                  <div className="w-[1.5px] h-full bg-black/30" />
+                  <div className="flex gap-1.5 items-center">
+                    <HiLightningBolt size={16} className="text-black/60" />
+                    <p className="text-sm font-medium text-black/60">Bounty</p>
+                  </div>
+                  <div className="w-[1.5px] h-full bg-black/30" />
                 </div>
               </div>
             </div>
