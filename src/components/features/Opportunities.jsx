@@ -11,7 +11,7 @@ export default function Opportunities() {
           <p className="text-sm font-medium text-black/60">Filter</p>
         </div>
       </div>
-      
+      .w-full.flex.
     </div>
   );
 }
