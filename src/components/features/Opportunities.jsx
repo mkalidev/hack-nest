@@ -60,15 +60,15 @@ export default function Opportunities() {
             key={item.id}
             className="w-full bg-white flex flex-col md:flex-row justify-between gap-4 items-center rounded-lg p-4 border border-black/10 hover:bg-white cursor-pointer feature-card transition-all duration-300"
           >
-            <div className="flex flex-col md:flex-row gap-2">
+            <div className="flex flex-col md:flex-row gap-4">
               <img
                 src={item.companyLogo}
                 alt={""}
                 className="w-24 h-24 bg-c-color/10 object-cover"
               />
               <h3 className="text-lg font-semibold">{item.company}</h3>
-            </div>
             <h3 className="text-lg font-semibold">{item.title}</h3>
+            </div>
             <div className="flex gap-2 items-center">
               {item.tags.map((tag) => (
                 <div key={tag} className="text-sm text-black/60">
