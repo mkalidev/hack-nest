@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CgChevronDown } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import MobileSidebar from "./MobileSidebar";
 import { useAppKit, useAppKitAccount } from "@reown/appkit/react";
 
