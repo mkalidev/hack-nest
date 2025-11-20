@@ -76,7 +76,7 @@ export default function OpportunityDetail() {
           ← Back to opportunities
         </button>
 
-        <div className="rounded-3xl bg-gradient-to-br from-white to-c-color/5 p-8 border border-black/5 shadow-sm space-y-6">
+        <div className="rounded-3xl bg-gradient-to-br from-white to-c-color/5 p-8 border border-black/5 space-y-6">
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="w-20 h-20 rounded-2xl bg-c-color/10 flex items-center justify-center text-2xl font-bold text-c-color">
               {opportunity.company?.slice(0, 2)}
@@ -105,7 +105,7 @@ export default function OpportunityDetail() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <div className="rounded-2xl bg-white border border-black/5 px-6 py-4 shadow-sm">
+                <div className="rounded-2xl bg-white border border-black/5 px-6 py-4">
                   <p className="text-xs uppercase tracking-widest text-black/50">
                     Reward
                   </p>
@@ -113,13 +113,13 @@ export default function OpportunityDetail() {
                     {formatCurrency(opportunity.reward)}
                   </p>
                 </div>
-                <div className="rounded-2xl bg-white border border-black/5 px-6 py-4 shadow-sm">
+                <div className="rounded-2xl bg-white border border-black/5 px-6 py-4">
                   <p className="text-xs uppercase tracking-widest text-black/50">
                     Deadline
                   </p>
                   <p className="text-lg font-semibold">Due in 3 days</p>
                 </div>
-                <div className="rounded-2xl bg-white border border-black/5 px-6 py-4 shadow-sm">
+                <div className="rounded-2xl bg-white border border-black/5 px-6 py-4">
                   <p className="text-xs uppercase tracking-widest text-black/50">
                     Status
                   </p>
@@ -156,7 +156,7 @@ export default function OpportunityDetail() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-black/5 bg-white p-6 space-y-4 shadow-sm">
+          <div className="rounded-2xl border border-black/5 bg-white p-6 space-y-4">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-semibold text-black/60 uppercase tracking-widest">
@@ -198,7 +198,7 @@ export default function OpportunityDetail() {
           <div className="flex flex-col md:flex-row gap-3">
             <button
               type="button"
-              className="flex-1 px-6 py-4 rounded-2xl bg-c-color text-white font-semibold text-center hover:bg-c-color/80 transition-colors duration-200 shadow-sm shadow-c-color/30"
+              className="flex-1 px-6 py-4 rounded-2xl bg-c-color text-white font-semibold text-center hover:bg-c-color/80 transition-colors duration-200"
             >
               Apply now
             </button>
@@ -211,7 +211,7 @@ export default function OpportunityDetail() {
           </div>
         </div>
 
-        <div className="rounded-3xl border border-black/5 bg-white/90 backdrop-blur-sm p-6 shadow-sm space-y-6">
+        <div className="rounded-3xl border border-black/5 bg-white/90 backdrop-blur-sm p-6 space-y-6">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-semibold text-black/60 uppercase tracking-widest">
