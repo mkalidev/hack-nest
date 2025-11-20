@@ -72,24 +72,28 @@ export default function StatsSidebar() {
           
           <div className="space-y-4">
             {steps.map((step, index) => (
-              <div key={index} className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-c-color/10 flex items-center justify-center">
-                  {step.icon}
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="text-xs font-semibold text-c-color">
-                      Step {index + 1}
-                    </span>
+              <div key={index} className="relative">
+                <div className="flex gap-4">
+                  <div className="flex flex-col items-center">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-c-color/10 flex items-center justify-center relative z-10">
+                      {step.icon}
+                    </div>
+                    {index < steps.length - 1 && (
+                      <div className="w-0.5 h-8 bg-c-color/20 mt-2"></div>
+                    )}
                   </div>
-                  <h4 className="text-sm font-semibold text-black mb-1">
-                    {step.title}
-                  </h4>
-                  <p className="text-xs text-black/60">{step.description}</p>
+                  <div className="flex-1 pb-4">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-xs font-semibold text-c-color">
+                        Step {index + 1}
+                      </span>
+                    </div>
+                    <h4 className="text-sm font-semibold text-black mb-1">
+                      {step.title}
+                    </h4>
+                    <p className="text-xs text-black/60">{step.description}</p>
+                  </div>
                 </div>
-                {index < steps.length - 1 && (
-                  <div className="absolute left-5 mt-10 w-0.5 h-8 bg-c-color/20"></div>
-                )}
               </div>
             ))}
           </div>
