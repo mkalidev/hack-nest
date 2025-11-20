@@ -58,7 +58,7 @@ export default function Navbar() {
           <div className="block md:hidden" onClick={() => setOpen(!open)}>
             <GiHamburgerMenu size={24} />
           </div>
-          <div className="flex gap-6 items-center">
+          <div className="gap-6 items-center hidden md:flex">
             <Link to="/">
               <p
                 className={`text-sm font-medium transition-colors ${
