@@ -206,7 +206,9 @@ export default function Grants() {
       </section>
 
       {/* Features Section */}
-      <section className="w-full py-20">
+      <section className="w-full py-20 relative">
+        {/* Animated Background Circle */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-c-color/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black">
@@ -232,7 +234,12 @@ export default function Grants() {
       </section>
 
       {/* Available Grants Section */}
-      <section className="w-full py-20 bg-black/5">
+      <section className="w-full py-20 bg-black/5 relative">
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-c-color/5 via-transparent to-purple-300/5 pointer-events-none"></div>
+        {/* Floating Elements */}
+        <div className="absolute top-10 right-10 w-20 h-20 border border-c-color/20 rounded-full animate-float"></div>
+        <div className="absolute bottom-10 left-10 w-16 h-16 border border-c-color/20 rounded-lg rotate-45 animate-float delay-1000"></div>
         <div className="max-w-7xl mx-auto px-4 md:px-6 space-y-8">
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-black">
