@@ -63,6 +63,15 @@ body {
   animation: shimmer 2s infinite;
 }
 
+/* Animation delays */
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+.delay-2000 {
+  animation-delay: 2s;
+}
+
 /* Gradient text effect */
 .gradient-text {
   background: linear-gradient(135deg, #ffffff 0%, #e5e7eb 100%);
