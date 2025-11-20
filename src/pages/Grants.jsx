@@ -124,9 +124,25 @@ export default function Grants() {
       : grants.filter((g) => g.category === activeFilter);
 
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="fixed inset-0 -z-10 pointer-events-none">
+        {/* Gradient Orbs */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-c-color/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-purple-300/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
+        
+        {/* Floating Shapes */}
+        <div className="absolute top-20 right-20 w-32 h-32 border-2 border-c-color/10 rounded-full animate-float"></div>
+        <div className="absolute top-1/2 left-10 w-24 h-24 border-2 border-c-color/10 rounded-lg rotate-45 animate-float delay-1000"></div>
+        <div className="absolute bottom-20 right-1/3 w-40 h-40 border-2 border-c-color/10 rounded-full animate-float delay-2000"></div>
+        
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      </div>
+
       {/* Hero Section */}
-      <section className="w-full py-20 md:py-32">
+      <section className="w-full py-20 md:py-32 relative">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="text-center space-y-6 max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-c-color/10 text-c-color text-sm font-semibold">
@@ -161,7 +177,10 @@ export default function Grants() {
       </section>
 
       {/* Stats Section */}
-      <section className="w-full py-16 border-y border-black/10">
+      <section className="w-full py-16 border-y border-black/10 relative">
+        {/* Decorative Elements */}
+        <div className="absolute top-0 left-0 w-64 h-64 bg-c-color/5 rounded-full blur-2xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-purple-300/5 rounded-full blur-2xl translate-x-1/2 translate-y-1/2"></div>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
