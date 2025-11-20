@@ -1,12 +1,26 @@
 import { GoCheckCircleFill } from "react-icons/go";
 import { HiLightningBolt } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 import { formatCurrency } from "../libs/utils";
 
 export function OpportunityCard({ item }) {
   if (!item) return null;
+  const navigate = useNavigate();
 
   return (
-    <div className="w-full bg-white flex flex-col md:flex-row justify-between gap-4 items-center rounded-md p-4 border border-transparent cursor-pointer transition-all duration-300">
+    <div
+      className="w-full bg-white flex flex-col md:flex-row justify-between gap-4 items-center rounded-md p-4 border border-transparent cursor-pointer transition-all duration-300"
+      onClick={() => navigate(`/${item.id}`)}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          navigate(`/${item.id}`);
+        }
+      }}
+      role="button"
+      tabIndex={0}
+      aria-label={`View ${item.title} opportunity`}
+    >
       <div className="flex flex-col items-start md:flex-row gap-4">
         <img
           src="/103780637.png"
