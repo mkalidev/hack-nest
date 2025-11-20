@@ -39,10 +39,32 @@ export const formatNumber = (number, decimals = 0, locale = "en-US") => {
 
 /**
  * Formats a number as currency
+ * @param {number|string} amount - The amount to format
+ * @param {string|number} currencyOrDecimals - Currency code (e.g., 'USD') or number of decimals
+ * @param {string} locale - Locale string (default: 'en-US')
+ * @returns {string} Formatted currency string
  */
-export const formatCurrency = (amount, currency = "USD", locale = "en-US") => {
+export const formatCurrency = (
+  amount,
+  currencyOrDecimals = "USD",
+  locale = "en-US"
+) => {
   if (amount === null || amount === undefined || isNaN(Number(amount)))
     return "$0.00";
+
+  // If second parameter is a number, treat it as decimals and use default USD
+  if (typeof currencyOrDecimals === "number") {
+    const decimals = currencyOrDecimals;
+    return new Intl.NumberFormat(locale, {
+      style: "currency",
+      currency: "USD",
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    }).format(Number(amount));
+  }
+
+  // Otherwise, treat it as currency code
+  const currency = currencyOrDecimals || "USD";
   return new Intl.NumberFormat(locale, {
     style: "currency",
     currency: currency,
