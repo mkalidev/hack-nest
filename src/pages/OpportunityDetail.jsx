@@ -78,7 +78,7 @@ export default function OpportunityDetail() {
                     Reward
                   </p>
                   <p className="text-2xl font-semibold">
-                    {formatCurrency(opportunity.reward, 0)}
+                    {formatCurrency(opportunity.reward)}
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white border border-black/5 px-6 py-4 shadow-sm">
