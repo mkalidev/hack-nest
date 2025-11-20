@@ -123,7 +123,7 @@ export default function OpportunityDetail() {
                   <p className="text-xs uppercase tracking-widest text-black/50">
                     Status
                   </p>
-                  <p className="text-lg font-semibold capitalize"
+                  <p className="text-lg font-semibold capitalize">
                     {opportunity.status}
                   </p>
                 </div>
