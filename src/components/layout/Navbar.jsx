@@ -52,7 +52,7 @@ export default function Navbar() {
         <div className="mx-auto px-4 md:px-6 flex items-center h-full justify-between max-w-[1320px]">
           <Link to="/">
             <p className="font-semibold text-[16px] md:text-[20px]">
-              Welcome, <span className="text-c-color capitalize">Guest</span>
+              Hack <span className="text-c-color capitalize">Nest</span>
             </p>
           </Link>
           <div className="block md:hidden" onClick={() => setOpen(!open)}>
