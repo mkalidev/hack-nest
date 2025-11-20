@@ -60,13 +60,37 @@ export default function Navbar() {
           </div>
           <div className="flex gap-6 items-center">
             <Link to="/">
-              <p className="text-sm font-medium text-black/60">Bounties</p>
+              <p
+                className={`text-sm font-medium transition-colors ${
+                  isActive("/")
+                    ? "text-c-color font-semibold"
+                    : "text-black/60 hover:text-black"
+                }`}
+              >
+                Bounties
+              </p>
             </Link>
             <Link to="/hackathons">
-              <p className="text-sm font-medium text-black/60">Hackathon</p>
+              <p
+                className={`text-sm font-medium transition-colors ${
+                  isActive("/hackathons")
+                    ? "text-c-color font-semibold"
+                    : "text-black/60 hover:text-black"
+                }`}
+              >
+                Hackathon
+              </p>
             </Link>
-            <Link to="/">
-              <p className="text-sm font-medium text-black/60">Grants</p>
+            <Link to="/grants">
+              <p
+                className={`text-sm font-medium transition-colors ${
+                  isActive("/grants")
+                    ? "text-c-color font-semibold"
+                    : "text-black/60 hover:text-black"
+                }`}
+              >
+                Grants
+              </p>
             </Link>
           </div>
 
