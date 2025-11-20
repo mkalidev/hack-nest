@@ -147,14 +147,6 @@ Located in `src/components/libs/utils.js`:
 - `formatNumberCompact()` - Format with K/M/B suffixes
 - `getCookie()` - Get cookie value by name
 
-## 🤖 Auto-Commit Script
-
-The project includes an auto-commit script that automatically commits changes every 20 seconds:
-
-```bash
-npm run auto-commit
-```
-
 Each changed file is committed separately with the message format: `feat: changes in (filename)`
 
 ## 📝 Environment Setup
