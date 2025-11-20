@@ -77,11 +77,11 @@ export default function OpportunityDetail() {
         </button>
 
         <div className="rounded-3xl bg-linear-to-br from-white to-c-color/5 p-8 border border-black/5 space-y-6">
-          <div className="flex flex-col md:flex-row items-start gap-6">
+          <div className="flex flex-col items-start gap-6">
             <div className="w-20 h-20 rounded-2xl bg-c-color/10 flex items-center justify-center text-2xl font-bold text-c-color">
               {opportunity.company?.slice(0, 2)}
             </div>
-            <div className="space-y-4 flex-1">
+            <div className="space-y-4 w-full">
               <div className="flex flex-col gap-2">
                 <p className="text-sm uppercase tracking-wider text-black/50">
                   #{String(opportunity.id).padStart(3, "0")}
