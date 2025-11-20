@@ -344,7 +344,12 @@ export default function Grants() {
       </section>
 
       {/* How It Works Section */}
-      <section className="w-full py-20">
+      <section className="w-full py-20 relative">
+        {/* Animated Background Pattern */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-c-color/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-300/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-black">
@@ -369,9 +374,16 @@ export default function Grants() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-20">
-        <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <div className="rounded-3xl bg-c-color/10 p-12 md:p-16 text-center space-y-6">
+      <section className="w-full py-20 relative">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-gradient-to-t from-c-color/10 via-transparent to-transparent"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-c-color/5 rounded-full blur-3xl animate-pulse"></div>
+        
+        <div className="max-w-4xl mx-auto px-4 md:px-6 relative z-10">
+          <div className="rounded-3xl bg-c-color/10 backdrop-blur-sm border border-c-color/20 p-12 md:p-16 text-center space-y-6 relative overflow-hidden">
+            {/* Animated Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-c-color/20 via-purple-300/20 to-c-color/20 animate-shimmer opacity-50"></div>
+            <div className="relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold text-black">
               Ready to Get Started?
             </h2>
