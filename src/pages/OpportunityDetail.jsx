@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { GoCheckCircleFill } from "react-icons/go";
 import { HiLightningBolt } from "react-icons/hi";
@@ -8,6 +8,38 @@ import { formatCurrency } from "../components/libs/utils";
 export default function OpportunityDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [message, setMessage] = useState("");
+  const [comments, setComments] = useState([
+    {
+      id: 1,
+      author: "Amina O.",
+      role: "Project Lead @ HackNest",
+      timestamp: "2h ago",
+      body:
+        "We’re reviewing submissions later this week. Drop any clarifying questions here and the core team will respond.",
+    },
+    {
+      id: 2,
+      author: "Leo M.",
+      role: "Frontend Engineer",
+      timestamp: "45m ago",
+      body: "Is there a preferred stack for the dashboard deliverable? I’m thinking React + Tailwind + viem.",
+    },
+  ]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (!message.trim()) return;
+    const newComment = {
+      id: Date.now(),
+      author: "You",
+      role: "Contributor",
+      timestamp: "Just now",
+      body: message.trim(),
+    };
+    setComments((prev) => [newComment, ...prev]);
+    setMessage("");
+  };
 
   const opportunity = useMemo(
     () => data.find((item) => String(item.id) === id),
@@ -176,6 +208,65 @@ export default function OpportunityDetail() {
             >
               Save for later
             </button>
+          </div>
+
+          <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm space-y-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-semibold text-black/60 uppercase tracking-widest">
+                  Live discussion
+                </p>
+                <p className="text-xl font-semibold">Founder chat</p>
+              </div>
+              <span className="text-sm text-black/50">{comments.length} updates</span>
+            </div>
+
+            <div className="space-y-4 max-h-80 overflow-y-auto pr-1 custom-scroll">
+              {comments.map((comment) => (
+                <div
+                  key={comment.id}
+                  className="rounded-2xl border border-black/5 p-4 bg-black/2 space-y-2"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm font-semibold text-black">
+                        {comment.author}
+                      </p>
+                      <p className="text-xs text-black/60">{comment.role}</p>
+                    </div>
+                    <span className="text-xs text-black/50">{comment.timestamp}</span>
+                  </div>
+                  <p className="text-sm text-black/70 leading-relaxed">
+                    {comment.body}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-3">
+              <label className="text-sm font-semibold text-black/70" htmlFor="new-comment">
+                Drop a note for the team
+              </label>
+              <textarea
+                id="new-comment"
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
+                placeholder="Share feedback, ask a question, or cheer on other builders."
+                className="w-full rounded-2xl border border-black/10 px-4 py-3 text-sm outline-none focus:border-c-color focus:ring-2 focus:ring-c-color/20 min-h-[110px] resize-none"
+              />
+              <div className="flex items-center justify-between gap-3">
+                <p className="text-xs text-black/50">
+                  This thread is public to everyone exploring the bounty.
+                </p>
+                <button
+                  type="submit"
+                  className="px-5 py-2.5 rounded-2xl bg-c-color text-white text-sm font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                  disabled={!message.trim()}
+                >
+                  Post update
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
