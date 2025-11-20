@@ -104,15 +104,15 @@ export default function Hackathons() {
       : hackathons.filter((h) => h.status === activeFilter);
 
   return (
-    <div className="w-full min-h-screen bg-white py-10">
+    <div className="w-full min-h-screen py-10">
       <div className="max-w-7xl mx-auto px-4 md:px-6 space-y-8">
         {/* Header */}
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-center gap-3">
             <div className="w-12 h-12 rounded-xl bg-c-color/10 flex items-center justify-center">
               <HiLightningBolt className="text-c-color" size={24} />
             </div>
-            <div>
+            <div className="text-center">
               <h1 className="text-3xl md:text-4xl font-bold text-black">
                 Hackathons
               </h1>
@@ -123,7 +123,7 @@ export default function Hackathons() {
           </div>
 
           {/* Filters */}
-          <div className="flex flex-wrap items-center gap-4 pt-4">
+          <div className="flex items-center justify-between pt-4">
             <div className="flex items-center gap-2 text-black/60">
               <RiFilter3Fill size={18} />
               <span className="text-sm font-medium">Filter by status</span>
