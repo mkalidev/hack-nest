@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { GoCheckCircleFill } from "react-icons/go";
 import { HiLightningBolt } from "react-icons/hi";
-import { LuGlobe2 } from "react-icons/lu";
 import { data } from "../components/data/data";
 import { formatCurrency } from "../components/libs/utils";
 
@@ -139,7 +138,7 @@ export default function OpportunityDetail() {
                 onClick={() => window.open(opportunity.companyWebsite, "_blank")}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-black text-white text-sm font-semibold"
               >
-                <LuGlobe2 size={18} />
+                {/* <LuGlobe2 size={18} /> */}
                 Visit site
               </button>
             </div>
