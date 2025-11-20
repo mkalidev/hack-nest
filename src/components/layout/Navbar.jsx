@@ -9,9 +9,19 @@ export default function Navbar() {
   const [showOption, setShowOption] = useState(false);
   const [open, setOpen] = useState(false);
   const optionsRef = useRef(null);
+  const location = useLocation();
 
   const { open: openAuth } = useAppKit();
   const { address, isConnected } = useAppKitAccount();
+
+  // Check if a route is active
+  const isActive = (path) => {
+    if (path === "/") {
+      // For home route, check if we're on home or detail page (starts with / and is a number)
+      return location.pathname === "/" || /^\/\d+$/.test(location.pathname);
+    }
+    return location.pathname === path || location.pathname.startsWith(path + "/");
+  };
 
   // Close dropdown when clicking outside
   useEffect(() => {
