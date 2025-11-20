@@ -52,7 +52,7 @@ export default function Navbar() {
             <Link to="/">
               <p className="text-sm font-medium text-black/60">Bounties</p>
             </Link>
-            <Link to="/">
+            <Link to="/hackathons">
               <p className="text-sm font-medium text-black/60">Hackathon</p>
             </Link>
             <Link to="/">
