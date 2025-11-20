@@ -405,6 +405,7 @@ export default function Grants() {
                 Contact Us
               </button>
             </div>
+            </div>
           </div>
         </div>
       </section>
